@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public string Name = "Thure";
-    private int Lvl = 1;
+    public string Name = "Thure";// Here the first int this defined and is what our character is called.
+    private int Lvl = 1;// This is the first int, which defines our starting lvl.
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Calling(Name, Lvl));
+        Debug.Log(Calling(Name, Lvl));// We print the updated variabels.
 
 
     }
@@ -19,14 +19,13 @@ public class Level : MonoBehaviour
     {
        
     }
-    // The method is based on a string and int, which gets defined at the top of the script. In the method 2 new variabels will be made and not defined, one string and one int.
-    // In the method the defined lvl will get 1 higher and then returned, and then in the start method it will be debugged, with the old 2 variabels.
+    //A new method is created and is used to update our lvl and return it so it can get printed.
     private int Calling(string name, int lvl)
     {
         Debug.Log(name);
         Debug.Log(lvl);
-        lvl++;
-        return lvl;
+        lvl++;// The new variabel gets 1 higher here
+        return lvl; // This is where to return the data.
     }
 
 }
